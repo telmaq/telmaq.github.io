@@ -1,29 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 body {
   font-family: Roboto, sans-serif;
+  margin: 10px 10px 10px 10px;
 }
 
-img {
+h1 {
+  text-align: center;
+}
+
+.cope {
   width: 250px;
   transition: width 0.4s ease;
   transform-origin: center;
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
 }
-img:hover {
+.cope:hover {
   width: 300px;
-  filter:brightness(50%) ;
+  filter: brightness(50%);
+}
+.culture {
+  width: 400px;
 }
 
- .chatbubble{
-    display: flex;
-    
+.chatbubble {
+  background-color: antiquewhite;
+  border-radius: 15px;
 }
-.chat{ 
-    font-size: 40px;
-    font-weight: 700;
-    padding-top: 140px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 20px;
-    height: auto;
+.chat {
+  font-size: 30px;
+  font-weight: 600;
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.center-text {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  background-color: rgb(153, 124, 107);
+  text-decoration: dotted;
+  color: rgb(255, 250, 242);
+}
+a {
+  background-color: antiquewhite;
+  transition: 0.3s ease;
+  padding: 8px 8px 8px 8px;
+  border-radius: 15px;
+}
+
+.antiquewhite {
+  background-color: antiquewhite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.textbox {
+  font-size: 28px;
+  width: 100px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-color: rgb(134, 96, 96);
+  background-color: rgb(255, 254, 253);
+}
+
+.question { 
+  font-size: 25px;
+  text-align: center;
+  padding-top: 40px;
+  overflow: hidden;
+  animation: reveal 4s ease; 
+  animation-delay: 0s;
+}
+
+@keyframes reveal {
+    0% {opacity:0;}
+    50% {opacity:0;}
+    100% {opacity:1;}
 }
