@@ -128,14 +128,14 @@ a {
   background-color: rgb(255, 254, 253);
 }
 
-.question { 
+/* .question { 
   font-size: 25px;
   text-align: center;
   padding-top: 40px;
   overflow: hidden;
   animation: reveal 4s ease; 
   animation-delay: 0s;
-}
+} */
 
 .logo { 
   width: 30px;
@@ -157,9 +157,9 @@ a {
   padding-left: 25px;
 }
 
-@keyframes reveal {
+/* @keyframes reveal {
     0% {opacity:0;}
     50% {opacity:0;}
     100% {opacity:1;}
-}
+} */
 
